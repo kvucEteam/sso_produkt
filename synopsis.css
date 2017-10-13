@@ -1,0 +1,111 @@
+
+h1 {
+	/*margin-left: 15px;*/   /*Commented out 9/11-2016*/
+}
+
+textarea {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    width: 100%;
+}
+
+.input-group input  { 
+	color: #000;
+}
+
+.textindent{
+	padding-left: 32px;
+	clear: both;
+}
+
+.studentInput{
+	width: 100%;
+}
+
+
+.bootAjust .col-md-4 {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 5px;
+}
+
+.bootAjust .col-xs-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 5px;
+}
+
+.bootAjust.col-md-4:first-child{
+	padding-right: 5px;
+}
+
+/*
+.bibliographyWrap .studentInputSmall{ 
+	width: 32%;
+	margin-right: 10px;
+}
+*/
+
+.bibliographyWrap .input-group {
+	display: inherit;
+}
+
+
+.input-group {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.glyphLi {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+
+.Clear, .clear{
+    clear: both;
+}
+
+.glyphicons {
+
+    margin-right: 14px;
+    margin-top: 1px;
+}
+
+
+#addNewBibMandatory, #addNewBibOptional {
+	margin-top: 20px;
+	margin-left: 32px;
+}
+
+.addNewSubQuestionAnswer, #addNewSubQuestion {
+	margin-top: 10px;
+}
+
+
+.glyphicons-download-alt {
+	margin-right: 3px;
+}
+.glyphicons-notes-2 {
+    margin-right: 4px;
+}
+
+.reduceWidth{
+	max-width: 83%;
+}
+
+
+/*****************************************/
+
+#wordOutput {padding: 50px;}
+#wordOutput h1 {margin-top: 0px; margin-left: 0px;}
+#wordOutput h3 {color: #333}
+#wordOutput h4 {color: #56bfc5}
+#wordOutput .selected {color: #56bfc5; width: 25%}
+#wordOutput p {font-size: 1.2em; margin-bottom: 5px}
+#wordOutput table {width:95%; margin-left:12px}
+#wordOutput td {padding:10px 10px 10px 10px}
+#wordOutput ol {color: #000}
+#wordOutput .checkQuestion{background-color: #acefed; padding: 10px 10px 10px 10px; margin-bottom: 25px}
+#wordOutput .useMaterial{background-color: #d2d4ec; padding: 10px 10px 10px 10px; margin-bottom: 25px}
+#wordOutput .innerSpacer{margin: 10px}
