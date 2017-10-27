@@ -49,7 +49,6 @@
 					}},
 					{"html" : "<h2 class='subHeader'>Materialeliste</h2>"},
 					{"html" : "<p>Skriv alle de bøger, kilder og empiri, som du vil anvende i din SSO, ind her.</p>"},
-					{"html" : "<p class='red'>Expandable tekstfelter skal ind her.</p>"},
 					{"wrapper" : {
 						"tagName": "div",
 						"attr" : {"class": "expandable expandable_1"},
