@@ -13,8 +13,8 @@
 				"NOTE_1": "Årsagen til at content er et array er, at JSON ikke understøtter flere ens keys, som f.eks 'text' eller 'inputField'",
 				"content": [
 					{"header": "Forberedelse til vejledermøderne"},
-					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne."},
-					{"explanation": "Du skal forberede dig til de to vejledermøder, som du kommer til at have inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/6qe6T7QoaR0'>Vejlederens rolle <span class='glyphicon glyphicon-play'></span></div>."},
+					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne. Download dokumentet efterfølgende og arbejd videre."},
+					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt en video om vejledningsprocessen.  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/6qe6T7QoaR0'>Vejlederens rolle <span class='glyphicon glyphicon-play'></span></div>."},
 					{"header": "Forberedelse til første vejledermøde"},
 					{"html" : "<h2 class='subHeader'>Emne</h2>"},
 					{"inputField" : {
