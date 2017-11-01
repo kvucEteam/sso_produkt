@@ -134,7 +134,8 @@ function wordTemplate_1() {
 	HTML += 			'td {width: 25%;}';
 	HTML += 			'ul {font-size: 14px;}';
 	HTML += 			'#author div {display: inline-block;}';
-	HTML += 			'.instruction {color: #999;}';
+	HTML += 			'.instruction {}';
+	HTML += 			'.gray {color: #666;}';
 	HTML += 		'</style>';
 	HTML += 	'</head>';
 	HTML += 	'<body>';
@@ -147,7 +148,55 @@ function wordTemplate_1() {
 	HTML += 	'<h4>Materialeliste</h4>';
 	HTML += 	contentOfExpandable('#materialeliste');  		
 	HTML += 	'<h4>Spørgsmål til vejleder</h4>';
-	HTML += 	contentOf('p','#spoergsmaalTilVejleder', 'Spørgsmål til vejleder');  		
+	HTML += 	contentOf('p','#spoergsmaalTilVejleder', 'Spørgsmål til vejleder');  
+
+	HTML += 	'<br><br>';		
+
+
+	// HTML += 	'<h1 class="gray">Under mødet</h1>';
+
+
+	HTML += 	'<h4>Noter fra mødet med vejlederen</h4>';
+	HTML += 	'<p class="gray">(Noter til emne, nye ideer og uddybning af ideer, forsøg, ny mødedato mv.)</p>';
+	HTML += 	'<br><br>';
+
+	HTML += 	'<h4>Aftaler fra mødet</h4>';
+	HTML += 	'<p class="gray">(Beskrivelse af aftaler og produktkrav til det andet møde.)</p>';
+	HTML += 	'<br><br>';
+
+
+	HTML += 	'<h1 >Forberedelse til andet vejledermøde</h1>';
+
+
+	HTML += 	'<h4>Hvilke faglige begreber vil du anvende?</h4>';
+	HTML += 	'<p class="gray">(Skriv en halv til en hel side, hvor du giver eksempler på faglig argumentation: sproglig analyse af en af dine centrale kilder, kildekritik, beskrivelse af modeller, anvendelse af faglige begreber, beviser, udregninger mv. Produktet skal sendes til vejleder i rimelig tid inden mødet.)</p>';
+	HTML += 	'<br><br>';
+
+	HTML += 	'<h4>Hvilke faglige teorier vil du anvende?</h4>';
+	HTML += 	'<br><br>';
+
+	HTML += 	'<h4>Hvilke faglige metoder vil du anvende?</h4>';
+	HTML += 	'<br><br>';
+
+	HTML += 	'<h4>Faglig argumentation</h4>';
+	HTML += 	'<p class="gray">(Hvad vil du gerne frem til i din SSO? Hvordan vil du undersøge dit emne? Hvilke teorier, metoder og begreber kan hjælpe dig med at skrive noget faglige relevant i din opgave?)</p>';
+	HTML += 	'<br><br>';
+
+	HTML += 	'<h4>Materialeliste</h4>';
+	HTML += 	'<p class="gray">(Skriv videre på/redigér din litteraturliste fra første møde (bøger, kilder, og andet empiri som du vil anvende i din SSO))</p>';
+	HTML += 	'<br><br>';
+
+
+	HTML += 	'<h1 >Noter fra andet vejledermøde</h1>';
+
+
+	HTML += 	'<h4>Referat fra mødet</h4>';
+	HTML += 	'<p class="gray">(Skriv kommentarer til produktet, nye ideer og uddybning af ideer, nærmere afklaring af opgaveformulering m.m. her)</p>';
+	HTML += 	'<br><br>';
+
+	// HTML += 	'<h4>XXX</h4>';
+	// HTML += 	'<p class="gray">XXX</p>';
+	// HTML += 	'<br><br>';
 
 	HTML += 	'</body>';
 	HTML += '</html>';

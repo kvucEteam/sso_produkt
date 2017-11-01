@@ -14,15 +14,14 @@
 				"content": [
 					{"header": "Forberedelse til vejledermøderne"},
 					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne. Download dokumentet efterfølgende og arbejd videre."},
-					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt en video om vejledningsprocessen.  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/6qe6T7QoaR0'>Vejlederens rolle <span class='glyphicon glyphicon-play'></span></div>."},
-					{"header": "Forberedelse til første vejledermøde"},
+					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt en video om vejledningsprocessen. <br><br>  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/6qe6T7QoaR0'><span class='glyphicon glyphicon-play'></span>Vejlederens rolle</div>"},
 					{"html" : "<h2 class='subHeader'>Emne</h2>"},
 					{"inputField" : {
 						"attr": {"id": "emne", "class": "inputField fullWidth", "placeholder": "Skriv dit emne her"} 
 					}},
 					{"btn": {
 						"attr" : {"id": "btn_2", "class": "stepNav btn btn-primary marginRight_15"},
-						"text": "Læs mere om emnevalget <span class='glyphicons glyphicons-glasses'></span>",
+						"text": "<span class='glyphicons glyphicons-glasses'></span>Læs mere om emnevalget",
 						"onClick": {
 							"target": "#btn_2", "NOTE": "Alle id'er og klasser angives med mellemrum - ligesom i 'target' for dropdowns",
 							"template": "template_userMsgBox",
@@ -40,7 +39,7 @@
 					{"tag": {
 						"attr" : {"id": "download_answer", "class": "stepNav btn btn-primary marginRight_15", "href": "../sso_emner/emner.html", "target": "_blank"}, 
 						"tagName": "a", 
-						"text": "Se emner i emnebanken <span class='glyphicons glyphicons-eye-open'></span>"
+						"text": "<span class='glyphicons glyphicons-eye-open'></span> Se emner i emnebanken"
 					}},
 					{"html" : "<h2 class='subHeader'>Beskriv dit emne på en halv side</h2>"},
 					{"html" : "<p>Skriv en halv side, hvor du forklarer dine ideer og faglige motivation for at skrive om det valgte emne. Du kan også afgrænse af emnet og forklare om dine valg.</p>"},
@@ -71,24 +70,8 @@
 					}},
 					{"btn": {
 						"attr" : {"id": "download_1", "class": "stepNav download_1 btn btn-primary"},
-						"text": "DOWNLOAD<span class='glyphicons glyphicons-download-alt'></span>", 
+						"text": "<span class='glyphicons glyphicons-download-alt'></span>DOWNLOAD", 
 						"onClick": "download_1(.download_1)"
-					}},
-					{"header": "Under mødet"},
-					{"html" : "<h2 class='subHeader'>Noter fra mødet med vejlederen</h2>"},
-					{"html" : "<p>Noter til emne, nye ideer og uddybning af ideer, forsøg, ny mødedato mv.</p>"},
-					{"textArea": {
-						"attr" : {"id": "noterFraVejlederMoede", "placeholder": "Skriv dine noter fra vejledermødet ind her"}
-					}},
-					{"html" : "<h2 class='subHeader'>Aftaler fra mødet</h2>"},
-					{"html" : "<p>Beskrivelse af aftaler og produktkrav til det andet møde.</p>"},
-					{"textArea": {
-						"attr" : {"id": "aftalerOgProduktkrav", "placeholder": "Skriv aftaler og produktkrav til det andet møde ind her"}
-					}},
-					{"btn": {
-						"attr" : {"id": "download_2", "class": "stepNav download_2 btn btn-primary"},
-						"text": "DOWNLOAD<span class='glyphicons glyphicons-download-alt'></span>", 
-						"onClick": "download_2(.download_2)"
 					}}
 				]
 			},
@@ -101,13 +84,6 @@
 								"microhint": {
 									"obj": "#download_1", 
 									"text": "Her kan du downloade din emnebeskrivelse og sende til din vejleder efterfølgende.", 
-									"multiple": true, 
-									"color": "#000"
-							}},
-							{
-								"microhint": {
-									"obj": "#download_2", 
-									"text": "Her kan du downloade dine aftaler og ideer fra vejledermødet og arbejde videre på dem efterfølgende.", 
 									"multiple": true, 
 									"color": "#000"
 							}},

@@ -292,11 +292,6 @@ textarea {
 }
 
 
-
-.glyphicons-download-alt{
-    margin-left: 10px;
-}
-
 #download_answer{
     margin-right: 10px;
 }
@@ -413,17 +408,18 @@ input {
 
 .glyphicons-glasses{
     font-size: 1.3em;
-    margin-left: 8px;
+    margin-right: 10px;
+    top: -1px;
 }
 
 .glyphicons-eye-open { 
     font-size: 1.3em;
-    margin-left: 8px;
+    margin-right: 10px;
 }
 
 .glyphicon-play {
     font-size: 1em;
-    margin-left: 8px;
+    margin-right: 10px;
 }
 
 .glyphicon-asterisk {
@@ -436,6 +432,16 @@ input {
     margin-right: 10px;
 }
 
+.glyphicons-download-alt{
+    margin-right: 10px;
+}
+
+
 .download{
     /*margin-left: 15px;*/
+}
+
+.videoPlayBtn {
+    position: relative;
+    top: -10px;
 }
