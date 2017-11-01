@@ -1,5 +1,9 @@
 
 
+$( document ).ready(function() {
+    saveTimerUsrMsg();
+});
+
 function external_template1(dataObj1, dataObj2) {
 	
 }
