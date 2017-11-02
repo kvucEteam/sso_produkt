@@ -14,7 +14,7 @@
 				"content": [
 					{"header": "Forberedelse til vejledermøderne"},
 					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne. Download dokumentet efterfølgende og arbejd videre."},
-					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt en video om vejledningsprocessen. <br><br>  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/6qe6T7QoaR0'><span class='glyphicon glyphicon-play'></span>Vejlederens rolle</div>"},
+					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt en video om vejledningsprocessen. <br><br>  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/BRyrmClmbEg'><span class='glyphicon glyphicon-play'></span>Vejlederens rolle</div>"},
 					{"html" : "<h2 class='subHeader'>Emne</h2>"},
 					{"inputField" : {
 						"attr": {"id": "emne", "class": "inputField fullWidth", "placeholder": "Skriv dit emne her"} 
