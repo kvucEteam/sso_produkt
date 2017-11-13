@@ -1,8 +1,8 @@
 
 
-$( document ).ready(function() {
-    saveTimerUsrMsg();
-});
+// $( document ).ready(function() {  Commented out and moved to wiriteProcessClass.js ---> all furture "skriveguides" will inherit saveTimerUsrMsg funktionality
+//     saveTimerUsrMsg();
+// });
 
 function external_template1(dataObj1, dataObj2) {
 	
@@ -14,7 +14,7 @@ function UserMsgBox_video(src) {
     UserMsgBox_xclick('body', HTML);
 
     $('.MsgBox_bgr').addClass('MsgBox_bgr_video');
-    $('#UserMsgBox').attr('id', 'UserMsgBox_video');
+    $('#UserMsgBox').attr('id', 'UserMsgBox_video'); 
 }
 
 function scaleVideo(ratio) {
@@ -160,7 +160,7 @@ function wordTemplate_1() {
 	// HTML += 	'<h1 class="gray">Under mødet</h1>';
 
 
-	HTML += 	'<h4>Noter fra mødet med vejlederen</h4>';
+	HTML += 	'<h2>Noter fra mødet med vejlederen</h2>';
 	HTML += 	'<p class="gray">(Noter til emne, nye ideer og uddybning af ideer, forsøg, ny mødedato mv.)</p>';
 	HTML += 	'<br><br>';
 
@@ -169,7 +169,7 @@ function wordTemplate_1() {
 	HTML += 	'<br><br>';
 
 
-	HTML += 	'<h1 >Forberedelse til andet vejledermøde</h1>';
+	HTML += 	'<h1>Forberedelse til andet vejledermøde</h1>';
 
 
 	HTML += 	'<h4>Hvilke faglige begreber vil du anvende?</h4>';
@@ -191,10 +191,11 @@ function wordTemplate_1() {
 	HTML += 	'<br><br>';
 
 
-	HTML += 	'<h1 >Noter fra andet vejledermøde</h1>';
+	// HTML += 	'<h2>Noter fra andet vejledermøde</h2>';    // COMMENTED OUT 10/11-2017
+	HTML += 	'<h2>Noter fra mødet med vejlederen</h2>';  // ADDED 10/11-2017
 
 
-	HTML += 	'<h4>Referat fra mødet</h4>';
+	// HTML += 	'<h4>Referat fra mødet</h4>';    // COMMENTED OUT 10/11-2017
 	HTML += 	'<p class="gray">(Skriv kommentarer til produktet, nye ideer og uddybning af ideer, nærmere afklaring af opgaveformulering m.m. her)</p>';
 	HTML += 	'<br><br>';
 

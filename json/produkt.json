@@ -71,7 +71,7 @@
 					{"btn": {
 						"attr" : {"id": "download_1", "class": "stepNav download_1 btn btn-primary"},
 						"text": "<span class='glyphicons glyphicons-download-alt'></span>DOWNLOAD", 
-						"onClick": "download_1(.download_1)"
+						"onClick": "download_1(.download_1)" 
 					}}
 				]
 			},
@@ -86,11 +86,6 @@
 									"text": "Her kan du downloade din emnebeskrivelse og sende til din vejleder efterfølgende.", 
 									"multiple": true, 
 									"color": "#000"
-							}},
-							{
-								"userMsgBox": {
-									"target": "body", 
-									"text": "<h4>Obs</h4> Vær opmærksom på, at dit arbejde er tilknyttet den browser, som du bruger lige nu. Det vil sige, at du ikke kan arbejde videre på en anden computer/browser. Hvis du sletter din historik i browseren, så sletter du også alt dit arbejde."
 							}}
 						]
 					}
