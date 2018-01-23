@@ -48,28 +48,60 @@ $( ".MsgBox_bgr_video" ).on( "keydown", function( event ) {
 	}
 });
 
-
+// COMMENTED OUT 18/1-2018
 // Forberedelse til første vejledermøde
-function download_1() {
-	console.log('\nEXTERNAL FUNCTION download_1 - CALLED');
+// function download_1() {
+// 	console.log('\nEXTERNAL FUNCTION download_1 - CALLED');
 
-	var HTML = wordTemplate_1();
+// 	var HTML = wordTemplate_1();
 	
-	var converted = htmlDocx.asBlob(HTML);
-    console.log("EXTERNAL FUNCTION download - converted: " + JSON.stringify(converted));
-	saveAs(converted, 'SSO produktkrav - forberedelse til første vejledermøde.docx');
+// 	var converted = htmlDocx.asBlob(HTML);
+//     console.log("EXTERNAL FUNCTION download - converted: " + JSON.stringify(converted));
+// 	saveAs(converted, 'SSO produktkrav - forberedelse til første vejledermøde.docx');
+// }
+
+// ADDED 18/1-2018 - HTML-to-Word-conversion by PHP
+// The btn #submit by input type="submit" has a diffrent CSS-style... therefore another btn .download is used and click on the #submit btn.
+function download_1() {  
+	var HTML = '';
+	HTML += '<form action="../danA_skriveproces/htmlToWord.php" method="post">';
+    HTML += 	'<input type="hidden" name="fileName" id="hiddenField" value="SSO produktkrav - forberedelse til første vejledermøde" />';
+    HTML += 	'<input id="html" type="hidden" name="html" id="hiddenField" />';
+    HTML += 	'<input id="submit" type="submit" class="btn btn-info" value="Konverter" onclick="clearInterval(downloadTimer);">';  // <---- NOTE: The "downloadTimer" is cleared here!
+    HTML += '</form>';
+    $('#interface').append(HTML);
 }
 
-// Under første vejledermøde
-function download_2() {
-	console.log('\nEXTERNAL FUNCTION download_2 - CALLED');
+// ADDED 18/1-2018 - HTML-to-Word-conversion by PHP
+// If this is not present, some browseres starts to download an empty htmlToWord.php file instead of the intended .docx file.
+$( document ).on('click', '#submit', function(){  
+    console.log('#submit - CLICKED - submit');
+    $('#html').val(wordTemplate_1());
+});
 
-	var HTML = wordTemplate_2();
+// ADDED 18/1-2018 - HTML-to-Word-conversion by PHP
+// Some browsers need two clicks on the ".download" btn before the download starts. Therefore a timer is set to loop untill the variable "downloadTimer" is cleared.
+$( document ).on('click', '.download_1', function(){    
+	console.log('.download - CLICKED - submit');
+    window.Tcount = 0;
+	window.downloadTimer = setInterval(function(){  // <---- NOTE: The "downloadTimer" is cleared inline in the input-tag "#submit"
+		$('#submit').trigger('click');
+		++Tcount;
+		console.log('download - CLICKED - Tcount: ' + Tcount);
+	}, 200);
+});
+
+// COMMENTED OUT 18/1-2018
+// // Under første vejledermøde
+// function download_2() {
+// 	console.log('\nEXTERNAL FUNCTION download_2 - CALLED');
+
+// 	var HTML = wordTemplate_2();
 	
-	var converted = htmlDocx.asBlob(HTML);
-    console.log("EXTERNAL FUNCTION download - converted: " + JSON.stringify(converted));
-	saveAs(converted, 'SSO produktkrav - noter under første vejledermøde.docx');
-}
+// 	var converted = htmlDocx.asBlob(HTML);
+//     console.log("EXTERNAL FUNCTION download - converted: " + JSON.stringify(converted));
+// 	saveAs(converted, 'SSO produktkrav - noter under første vejledermøde.docx');
+// }
 
 
 $( document ).on('click', '.videoPlayBtn', function(){

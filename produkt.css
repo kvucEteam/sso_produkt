@@ -445,3 +445,7 @@ input {
     position: relative;
     top: -10px;
 }
+
+#submit {
+    display: none;
+}
